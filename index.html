@@ -1,0 +1,1223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UI Field Guide</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="description" content="A UI/UX terminology cheat sheet where every element on the page is labeled with its own name.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-kebab" viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="1.7" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="12" cy="18.5" r="1.7" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-meatball" viewBox="0 0 24 24"><circle cx="5.5" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.7" fill="currentColor" stroke="none"/><circle cx="18.5" cy="12" r="1.7" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-bento" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><circle cx="6" cy="6" r="1.6"/><circle cx="12" cy="6" r="1.6"/><circle cx="18" cy="6" r="1.6"/><circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/><circle cx="6" cy="18" r="1.6"/><circle cx="12" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></g></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24"><path d="M12 19V5M7 10l5-5 5 5"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0112 0v5l1.5 2h-15L6 16z"/><path d="M10 20.5a2 2 0 004 0"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3.8l9.2 16H2.8l9.2-16z"/><path d="M12 10v4.5M12 17.2v.2"/></symbol>
+  <symbol id="i-error" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15V4M7 9l5-5 5 5"/><path d="M4 15v4.5h16V15"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0112 7.3a4.3 4.3 0 017.5 2.5C19.5 15.4 12 20 12 20z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-6.5 8 6.5V20h-5.5v-5.5h-5V20H4v-9z"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3.5 13.5L6 5h12l2.5 8.5V19h-17v-5.5z"/><path d="M3.5 13.5H9a3 3 0 006 0h5.5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 17l-5.3 2.8 1.1-5.9-4.4-4.1 6-.8L12 3.5z"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M4 17l5-4.5 4 3.5 3-2.5 4.5 4"/></symbol>
+  <symbol id="i-inspect" viewBox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/><path d="M12 9v6M9 12h6"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main" data-ui="skip-link">Skip link: jump to main content</a>
+
+<div class="banner" id="banner" data-ui="banner">
+  <div class="banner-inner">
+    <span class="rtag rtag-inline">Banner</span>
+    <p>Everything on this page is labeled with its own name. Switch on <strong>Inspect mode</strong> and point at anything to see what it’s called.</p>
+    <button class="icon-btn" type="button" aria-label="Dismiss banner" data-ui="icon-button" data-dismiss="banner"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+</div>
+
+<header class="site-header" id="site-header" data-ui="header">
+  <span class="rtag rtag-bottom">Header</span>
+  <div class="header-inner">
+    <div class="an hide-wide">
+      <button class="icon-btn icon-btn-bordered" type="button" aria-label="Open table of contents" data-ui="hamburger-menu" data-open="nav-drawer"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      <span class="cap">Hamburger menu</span>
+    </div>
+    <div class="an">
+      <a class="logo" href="#top" data-ui="logo"><span class="logo-mark" aria-hidden="true"></span>UI Field Guide</a>
+      <span class="cap">Logo</span>
+    </div>
+    <div class="an nav-an">
+      <nav class="topnav" aria-label="Primary" data-ui="navigation-bar">
+        <a href="#layout" data-ui="link">Components</a>
+        <a href="#type" data-ui="link">Typography</a>
+        <a href="#states" data-ui="link">States</a>
+        <a href="#concepts" data-ui="link">Concepts</a>
+      </nav>
+      <span class="cap">Navigation bar</span>
+    </div>
+    <div class="header-spacer"></div>
+    <div class="an search-an">
+      <div class="search" data-ui="search-bar">
+        <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="search" type="search" placeholder="Search 150 terms" aria-label="Search terms" autocomplete="off" spellcheck="false">
+        <kbd aria-hidden="true">/</kbd>
+      </div>
+      <span class="cap">Search bar</span>
+    </div>
+    <div class="an cmd-an">
+      <button class="btn btn-secondary" type="button" data-open-palette data-ui="button">Jump to <kbd>⌘K</kbd></button>
+      <span class="cap">Button</span>
+    </div>
+    <div class="an inspect-safe">
+      <label class="switch" data-ui="toggle-switch"><input type="checkbox" role="switch" id="inspect-toggle"><span class="switch-track" aria-hidden="true"></span>Inspect</label>
+      <span class="cap">Toggle switch</span>
+    </div>
+  </div>
+</header>
+
+<div class="layout" id="top">
+  <aside class="sidebar" data-ui="sidebar" aria-label="Table of contents">
+    <span class="rtag rtag-inline">Sidebar</span>
+    <p class="side-title">On this page</p>
+    <nav class="toc" id="toc" aria-label="Sections">
+      <a href="#layout" data-ui="link"><span>Layout &amp; structure</span><span class="badge" data-count="layout" data-ui="badge">16</span></a>
+      <a href="#navigation" data-ui="link"><span>Navigation</span><span class="badge" data-count="navigation" data-ui="badge">14</span></a>
+      <a href="#actions" data-ui="link"><span>Buttons &amp; actions</span><span class="badge" data-count="actions" data-ui="badge">10</span></a>
+      <a href="#inputs" data-ui="link"><span>Inputs &amp; forms</span><span class="badge" data-count="inputs" data-ui="badge">18</span></a>
+      <a href="#feedback" data-ui="link"><span>Feedback &amp; status</span><span class="badge" data-count="feedback" data-ui="badge">9</span></a>
+      <a href="#overlays" data-ui="link"><span>Overlays</span><span class="badge" data-count="overlays" data-ui="badge">7</span></a>
+      <a href="#content" data-ui="link"><span>Content &amp; data</span><span class="badge" data-count="content" data-ui="badge">9</span></a>
+      <a href="#type" data-ui="link"><span>Typography</span><span class="badge" data-count="type" data-ui="badge">13</span></a>
+      <a href="#states" data-ui="link"><span>States</span><span class="badge" data-count="states" data-ui="badge">7</span></a>
+      <a href="#concepts" data-ui="link"><span>UX concepts</span><span class="badge" data-count="concepts" data-ui="badge">47</span></a>
+    </nav>
+    <div class="side-note"><span class="cap">Badge</span><span>The numbers count the terms in each section, and update as you search.</span></div>
+  </aside>
+
+  <main class="main" id="main" tabindex="-1" data-ui="main-content">
+    <span class="rtag">Main content</span>
+
+    <section class="hero" data-ui="hero-section" aria-labelledby="hero-title">
+      <span class="rtag">Hero section</span>
+      <div class="hero-copy">
+        <div class="an"><p class="eyebrow" data-ui="eyebrow">UI/UX terminology cheat sheet</p><span class="cap">Eyebrow</span></div>
+        <div class="an"><h1 id="hero-title" data-ui="heading">UI/UX elements, explained</h1><span class="cap">Headline · H1</span></div>
+        <div class="an"><p class="lede" data-ui="subheading">Find the word for the thing you’re looking at. <span data-total>150</span> interface terms, each shown as a working example with its name attached.</p><span class="cap">Subheadline</span></div>
+        <div class="hero-actions">
+          <div class="an"><a class="btn btn-primary btn-lg cta" href="#layout" data-ui="call-to-action">Browse the terms <svg class="ico" aria-hidden="true"><use href="#i-arrow-right"/></svg></a><span class="cap">Call to action</span></div>
+          <div class="an inspect-safe"><button class="btn btn-secondary btn-lg" type="button" id="hero-inspect" aria-pressed="false" data-ui="secondary-button"><svg class="ico" aria-hidden="true"><use href="#i-inspect"/></svg><span>Turn on Inspect mode</span></button><span class="cap">Secondary button</span></div>
+        </div>
+      </div>
+      <div class="an legend-an">
+        <div class="legend" data-ui="legend">
+          <p class="legend-title">How to read this page</p>
+          <ul>
+            <li><span class="lg-sw lg-tag">Name</span><span>A <b>name tag</b> labels the region it sits on.</span></li>
+            <li><span class="lg-sw lg-cap">Name</span><span>A <b>caption</b> labels the element just above it.</span></li>
+            <li><span class="lg-sw lg-stage"></span><span>A <b>stage</b> holds a live example. Click, type and drag.</span></li>
+            <li><span class="lg-sw lg-inspect"></span><span><b>Inspect mode</b> names anything you point at, with its size in pixels.</span></li>
+          </ul>
+        </div>
+        <span class="cap">Legend</span>
+      </div>
+    </section>
+
+    <div class="toolbar" id="toolbar">
+      <div class="an">
+        <div class="chips" role="group" aria-label="Filter by category" id="chips">
+          <button class="chip" type="button" aria-pressed="true" data-filter="all" data-ui="chip">All</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="layout" data-ui="chip">Layout</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="navigation" data-ui="chip">Navigation</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="actions" data-ui="chip">Actions</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="inputs" data-ui="chip">Inputs</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="feedback" data-ui="chip">Feedback</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="overlays" data-ui="chip">Overlays</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="content" data-ui="chip">Content</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="type" data-ui="chip">Typography</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="states" data-ui="chip">States</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="concepts" data-ui="chip">Concepts</button>
+        </div>
+        <span class="cap">Filter chips</span>
+      </div>
+      <p class="results" id="results" aria-live="polite">Showing all 150 terms</p>
+    </div>
+
+    <!-- ================= LAYOUT ================= -->
+    <section class="cat" id="layout" data-cat="layout" data-label="Layout" aria-labelledby="h-layout">
+      <div class="cat-head"><h2 id="h-layout" data-ui="heading">Layout &amp; structure</h2><p>The big regions a page is carved into, and the space that holds them apart.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-header" data-ui="card">
+          <div class="stage"><div class="wf" data-hl="header" aria-hidden="true"><span class="wf-h">Header</span><span class="wf-hero">Hero</span><span class="wf-side">Sidebar</span><span class="wf-main">Main content</span><span class="wf-f">Footer</span></div></div>
+          <div class="card-body"><h3>Header</h3><p class="aka">aka top bar · masthead · app bar</p><p class="def">The strip across the top of a page or app. It usually holds the logo, main navigation, search and account actions, and it repeats on every page.</p></div>
+        </article>
+
+        <article class="card" id="t-logo" data-ui="card">
+          <div class="stage"><span class="logo" data-ui="logo" style="font-size:22px"><span class="logo-mark" aria-hidden="true"></span>Logo</span></div>
+          <div class="card-body"><h3>Logo</h3><p class="aka">aka brand mark · wordmark · logomark</p><p class="def">The symbol or styled name that identifies a product or company. By convention, clicking it takes you back to the home page.</p></div>
+        </article>
+
+        <article class="card" id="t-hero-section" data-ui="card">
+          <div class="stage"><div class="wf" data-hl="hero" aria-hidden="true"><span class="wf-h">Header</span><span class="wf-hero">Hero</span><span class="wf-side">Sidebar</span><span class="wf-main">Main content</span><span class="wf-f">Footer</span></div></div>
+          <div class="card-body"><h3>Hero section</h3><p class="aka">aka hero · hero banner · jumbotron</p><p class="def">The large opening block at the top of a page: usually a headline, a supporting line and a call to action. It tells visitors what the page is about.</p></div>
+        </article>
+
+        <article class="card" id="t-sidebar" data-ui="card">
+          <div class="stage"><div class="wf" data-hl="side" aria-hidden="true"><span class="wf-h">Header</span><span class="wf-hero">Hero</span><span class="wf-side">Sidebar</span><span class="wf-main">Main content</span><span class="wf-f">Footer</span></div></div>
+          <div class="card-body"><h3>Sidebar</h3><p class="aka">aka side nav · side panel · rail (when narrow)</p><p class="def">A column beside the main content for secondary navigation, filters or related information. On phones it usually hides behind a menu button.</p></div>
+        </article>
+
+        <article class="card" id="t-main-content" data-ui="card">
+          <div class="stage"><div class="wf" data-hl="main" aria-hidden="true"><span class="wf-h">Header</span><span class="wf-hero">Hero</span><span class="wf-side">Sidebar</span><span class="wf-main">Main content</span><span class="wf-f">Footer</span></div></div>
+          <div class="card-body"><h3>Main content</h3><p class="aka">aka content area · body · &lt;main&gt;</p><p class="def">The central region holding the page’s primary content: everything that isn’t repeated on every page. Screen readers can jump straight to it.</p></div>
+        </article>
+
+        <article class="card" id="t-footer" data-ui="card">
+          <div class="stage"><div class="wf" data-hl="footer" aria-hidden="true"><span class="wf-h">Header</span><span class="wf-hero">Hero</span><span class="wf-side">Sidebar</span><span class="wf-main">Main content</span><span class="wf-f">Footer</span></div></div>
+          <div class="card-body"><h3>Footer</h3><p class="aka">aka page footer · site footer</p><p class="def">The region at the bottom of a page with secondary links, legal text, contact details and copyright. Like the header, it repeats on every page.</p></div>
+        </article>
+
+        <article class="card" id="t-banner" data-ui="card">
+          <div class="stage">
+            <div class="mini-banner" data-ui="banner"><span>Banner: maintenance on Sunday, 02:00 UTC.</span><button class="icon-btn" type="button" aria-label="Dismiss example banner" data-ui="icon-button" data-toast="Dismissed. Banners usually remember that you closed them."><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+            <div class="mini-banner-page" aria-hidden="true"><i></i><i style="width:70%"></i><i style="width:85%"></i></div>
+          </div>
+          <div class="card-body"><h3>Banner</h3><p class="aka">aka announcement bar · notification bar · site banner</p><p class="def">A full-width strip, usually at the very top, carrying a site-wide message such as an announcement, promotion or system notice. Often dismissible.</p></div>
+        </article>
+
+        <article class="card" id="t-above-the-fold" data-ui="card">
+          <div class="stage"><div class="fold" aria-hidden="true"><div class="fold-screen">Above the fold</div><div class="fold-line"><span>The fold</span></div><div class="fold-below">Below the fold</div></div></div>
+          <div class="card-body"><h3>Above the fold</h3><p class="aka">aka first screen · initial viewport</p><p class="def">The part of a page you can see without scrolling. The term comes from newspapers, where the top half sat above the fold. Where the fold falls depends on the screen.</p></div>
+        </article>
+
+        <article class="card" id="t-grid" data-ui="card">
+          <div class="stage">
+            <div class="colgrid" aria-hidden="true">
+              <div class="cg-frame"><span class="cg-margin"></span><div class="cg-cols"><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="cg-margin"></span></div>
+              <div class="cg-key"><span><i class="k-col"></i>Column</span><span><i class="k-gut"></i>Gutter</span><span><i class="k-mar"></i>Margin</span></div>
+            </div>
+          </div>
+          <div class="card-body"><h3>Grid</h3><p class="aka">aka layout grid · column grid · gutter</p><p class="def">Invisible columns that content lines up to. A grid has columns, gutters (the gaps between columns) and margins at the edges. 12 columns is common on desktop because 12 splits into halves, thirds and quarters.</p></div>
+        </article>
+
+        <article class="card" id="t-bento-grid" data-ui="card">
+          <div class="stage"><div class="bento" aria-hidden="true"><span class="b-big">Bento grid</span><span>Tile</span><span>Tile</span><span class="b-wide">Tile</span><span>Tile</span></div></div>
+          <div class="card-body"><h3>Bento grid</h3><p class="aka">aka bento box layout · tile layout</p><p class="def">Tiles of different sizes packed into one tidy grid, like the compartments of a bento box. Popular for feature overviews and dashboards.</p></div>
+        </article>
+
+        <article class="card" id="t-padding-and-margin" data-ui="card">
+          <div class="stage">
+            <div class="bm" aria-hidden="true"><span class="bm-l">Margin</span><div class="bm-border"><span class="bm-l">Border</span><div class="bm-pad"><span class="bm-l">Padding</span><div class="bm-content">Content</div></div></div></div>
+          </div>
+          <div class="card-body"><h3>Padding &amp; margin</h3><p class="aka">aka box model · spacing</p><p class="def">Padding is the space inside an element, between its content and its border. Margin is the space outside the border that pushes neighbors away. Together they make up the box model, drawn here in browser dev-tools colors.</p></div>
+        </article>
+
+        <article class="card" id="t-whitespace" data-ui="card">
+          <div class="stage"><div class="ws" aria-hidden="true"><span class="ws-label">Whitespace</span><span class="ws-content">Content</span></div></div>
+          <div class="card-body"><h3>Whitespace</h3><p class="aka">aka negative space · breathing room</p><p class="def">Empty space around and between elements. It isn’t wasted: it groups related things, separates unrelated ones and gives the eye somewhere to rest. It doesn’t have to be white.</p></div>
+        </article>
+
+        <article class="card" id="t-container" data-ui="card">
+          <div class="stage"><div class="bleed" aria-hidden="true"><span class="bleed-label">Full-bleed</span><div class="bleed-container">Container<br>max-width</div></div></div>
+          <div class="card-body"><h3>Container</h3><p class="aka">aka wrapper · max-width container · full-bleed (the opposite)</p><p class="def">A wrapper that caps content at a maximum width and centers it, so lines stay readable on wide screens. Anything that ignores the container and runs edge to edge is called full-bleed.</p></div>
+        </article>
+
+        <article class="card" id="t-card" data-ui="card">
+          <div class="stage">
+            <div class="demo-card" data-ui="card"><div class="demo-card-media"><svg class="ico" aria-hidden="true" style="width:26px;height:26px"><use href="#i-image"/></svg></div><div class="demo-card-body"><strong>Card</strong><span>A self-contained summary of one thing.</span><a href="#t-card">Action</a></div></div>
+          </div>
+          <div class="card-body"><h3>Card</h3><p class="aka">aka tile · panel</p><p class="def">A container that groups information about one subject, often an image, a title, a short description and an action. Every term on this page lives in a card.</p></div>
+        </article>
+
+        <article class="card" id="t-divider" data-ui="card">
+          <div class="stage"><div class="divider-demo"><p>Section above</p><div class="divider-labeled" role="separator" data-ui="divider">Divider</div><p>Section below</p></div></div>
+          <div class="card-body"><h3>Divider</h3><p class="aka">aka separator · rule · hairline · &lt;hr&gt;</p><p class="def">A thin line that separates groups of content. Use it sparingly; whitespace alone often does the job.</p></div>
+        </article>
+
+        <article class="card" id="t-sticky" data-ui="card">
+          <div class="stage">
+            <div class="sticky-demo" tabindex="0" role="region" aria-label="Scrollable sticky header example" data-ui="sticky"><div class="sticky-bar">Sticky header</div><p>Scroll inside this box.</p><p>The bar above stays pinned…</p><p>…while this content scrolls underneath it.</p><p>Keep going.</p><p>Still pinned.</p><p>That’s sticky.</p></div>
+          </div>
+          <div class="card-body"><h3>Sticky</h3><p class="aka">aka pinned · sticky header · fixed on scroll</p><p class="def">An element that scrolls with the page until it reaches an edge, then stays pinned there. On wide screens, the header of this page is sticky.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= NAVIGATION ================= -->
+    <section class="cat" id="navigation" data-cat="navigation" data-label="Navigation" aria-labelledby="h-navigation">
+      <div class="cat-head"><h2 id="h-navigation" data-ui="heading">Navigation</h2><p>Ways of moving between pages, sections and views.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-navigation-bar" data-ui="card">
+          <div class="stage">
+            <nav class="demo-nav" aria-label="Example navigation bar" data-ui="navigation-bar" data-single="aria-current">
+              <span class="demo-nav-logo">Logo</span>
+              <a href="#t-navigation-bar" aria-current="page" data-ui="link">Nav link</a>
+              <a href="#t-navigation-bar" data-ui="link">Nav link</a>
+              <a href="#t-navigation-bar" data-ui="link">Nav link</a>
+            </nav>
+          </div>
+          <div class="card-body"><h3>Navigation bar</h3><p class="aka">aka navbar · nav · menu bar · primary navigation</p><p class="def">A row (or column) of links to a product’s main sections. The link for the page you’re on is marked as current.</p></div>
+        </article>
+
+        <article class="card" id="t-link" data-ui="card">
+          <div class="stage"><p class="demo-text">Body text with an inline <a href="#t-link" data-ui="link">link</a> in it. A <a class="visited" href="#t-link" data-ui="link">visited link</a> often looks different.</p></div>
+          <div class="card-body"><h3>Link</h3><p class="aka">aka hyperlink · anchor · text link</p><p class="def">Text that takes you somewhere else when clicked: another page, a section or a file. A handy rule: links go places, buttons do things.</p></div>
+        </article>
+
+        <article class="card" id="t-breadcrumbs" data-ui="card">
+          <div class="stage"><nav class="crumbs" aria-label="Breadcrumb example" data-ui="breadcrumbs"><ol><li><a href="#top">Home</a></li><li><a href="#navigation">Navigation</a></li><li><span aria-current="page">Breadcrumbs</span></li></ol></nav></div>
+          <div class="card-body"><h3>Breadcrumbs</h3><p class="aka">aka breadcrumb trail</p><p class="def">A trail of links showing where the current page sits in the site’s hierarchy, from the top level down. Named after the trail of crumbs in Hansel and Gretel.</p></div>
+        </article>
+
+        <article class="card" id="t-tabs" data-ui="card">
+          <div class="stage">
+            <div class="tabs" data-ui="tabs">
+              <div class="tablist" role="tablist" aria-label="Example tabs">
+                <button type="button" role="tab" id="tab-1" aria-selected="true" aria-controls="tp-1">Tab 1</button>
+                <button type="button" role="tab" id="tab-2" aria-selected="false" aria-controls="tp-2" tabindex="-1">Tab 2</button>
+                <button type="button" role="tab" id="tab-3" aria-selected="false" aria-controls="tp-3" tabindex="-1">Tab 3</button>
+              </div>
+              <div class="tabpanel" role="tabpanel" id="tp-1" aria-labelledby="tab-1">Tab panel 1. Only the selected tab’s panel is visible.</div>
+              <div class="tabpanel" role="tabpanel" id="tp-2" aria-labelledby="tab-2" hidden>Tab panel 2. Same spot, different content.</div>
+              <div class="tabpanel" role="tabpanel" id="tp-3" aria-labelledby="tab-3" hidden>Tab panel 3. Arrow keys move between tabs.</div>
+            </div>
+          </div>
+          <div class="card-body"><h3>Tabs</h3><p class="aka">aka tab bar · tab strip</p><p class="def">A row of labels that switch between panels of related content in the same place, showing one panel at a time.</p></div>
+        </article>
+
+        <article class="card" id="t-segmented-control" data-ui="card">
+          <div class="stage"><div class="seg" role="group" aria-label="Segmented control example" data-ui="segmented-control" data-single="aria-pressed"><button type="button" aria-pressed="true">Segment</button><button type="button" aria-pressed="false">Segment</button><button type="button" aria-pressed="false">Segment</button></div></div>
+          <div class="card-body"><h3>Segmented control</h3><p class="aka">aka segmented button · toggle group</p><p class="def">A compact row of joined options where exactly one is selected, like radio buttons styled as one control. Good for switching between views of the same content.</p></div>
+        </article>
+
+        <article class="card" id="t-pagination" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <nav class="pager" aria-label="Pagination example" data-ui="pagination">
+                <button class="pg" type="button" data-step="-1" aria-label="Previous page"><svg class="ico" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+                <button class="pg" type="button" data-page="1">1</button>
+                <button class="pg" type="button" data-page="2" aria-current="page">2</button>
+                <button class="pg" type="button" data-page="3">3</button>
+                <span class="pg-gap" aria-hidden="true">…</span>
+                <button class="pg" type="button" data-page="12">12</button>
+                <button class="pg" type="button" data-step="1" aria-label="Next page"><svg class="ico" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+              </nav>
+              <span class="cap">Pagination</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Pagination</h3><p class="aka">aka pager · page numbers</p><p class="def">Controls that split a long list of results into numbered pages, with previous and next buttons. The alternative is infinite scroll.</p></div>
+        </article>
+
+        <article class="card" id="t-hamburger-menu" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="menu-wrap"><button class="icon-btn icon-btn-bordered" type="button" data-menu aria-expanded="false" aria-label="Open example menu" data-ui="hamburger-menu"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button><div class="menu" hidden><button type="button" data-toast="Menu item chosen.">Menu item</button><button type="button" data-toast="Menu item chosen.">Menu item</button><button type="button" data-toast="Menu item chosen.">Menu item</button></div></div>
+              <span class="cap">Hamburger menu</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Hamburger menu</h3><p class="aka">aka menu icon · navicon</p><p class="def">An icon of three horizontal lines that opens the navigation, usually on small screens where the full navigation bar doesn’t fit.</p></div>
+        </article>
+
+        <article class="card" id="t-kebab-menu" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="menu-wrap"><button class="icon-btn icon-btn-bordered" type="button" data-menu aria-expanded="false" aria-label="More actions" data-ui="kebab-menu"><svg class="ico" aria-hidden="true"><use href="#i-kebab"/></svg></button><div class="menu" hidden><button type="button" data-toast="Menu item chosen.">Edit</button><button type="button" data-toast="Menu item chosen.">Duplicate</button><hr><button type="button" class="danger" data-toast="Nothing was deleted. It’s only an example.">Delete</button></div></div>
+              <span class="cap">Kebab menu</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Kebab menu</h3><p class="aka">aka overflow menu · more menu · vertical ellipsis</p><p class="def">Three vertically stacked dots that open a menu of extra actions for an item. Common on cards, list rows and table rows.</p></div>
+        </article>
+
+        <article class="card" id="t-meatball-menu" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="menu-wrap"><button class="icon-btn icon-btn-bordered" type="button" data-menu aria-expanded="false" aria-label="More actions" data-ui="meatball-menu"><svg class="ico" aria-hidden="true"><use href="#i-meatball"/></svg></button><div class="menu" hidden><button type="button" data-toast="Menu item chosen.">Rename</button><button type="button" data-toast="Menu item chosen.">Move</button><button type="button" data-toast="Menu item chosen.">Share</button></div></div>
+              <span class="cap">Meatball menu</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Meatball menu</h3><p class="aka">aka horizontal ellipsis · more button</p><p class="def">Three horizontal dots that open a menu of extra actions. Same job as the kebab menu, turned sideways.</p></div>
+        </article>
+
+        <article class="card" id="t-bento-menu" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="menu-wrap"><button class="icon-btn icon-btn-bordered" type="button" data-menu aria-expanded="false" aria-label="Switch apps" data-ui="bento-menu"><svg class="ico" aria-hidden="true"><use href="#i-bento"/></svg></button><div class="menu" hidden><button type="button" data-toast="Switched apps (not really).">Mail</button><button type="button" data-toast="Switched apps (not really).">Calendar</button><button type="button" data-toast="Switched apps (not really).">Drive</button></div></div>
+              <span class="cap">Bento menu</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Bento menu</h3><p class="aka">aka app launcher · waffle menu · grid menu</p><p class="def">A 3×3 grid of dots or squares that opens a launcher for switching between the apps in a product family.</p></div>
+        </article>
+
+        <article class="card" id="t-dropdown-menu" data-ui="card">
+          <div class="stage">
+            <div class="dd">
+              <button class="btn btn-secondary btn-sm" type="button" data-menu data-menu-static aria-expanded="true" data-ui="button">Dropdown menu <svg class="ico" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+              <div class="menu static" data-ui="dropdown-menu"><button type="button" data-toast="Menu item chosen.">Menu item</button><button type="button" data-toast="Menu item chosen.">Menu item</button><hr><button type="button" class="danger" data-toast="Nothing was deleted. It’s only an example.">Destructive item</button></div>
+            </div>
+          </div>
+          <div class="card-body"><h3>Dropdown menu</h3><p class="aka">aka menu · dropdown · context menu (when opened by right-click)</p><p class="def">A list of options that drops down when you click a button and hides again after you choose. Unlike a select, it holds actions or links, not a value.</p></div>
+        </article>
+
+        <article class="card" id="t-stepper" data-ui="card">
+          <div class="stage"><ol class="steps" aria-label="Progress" data-ui="stepper"><li class="done"><span class="dot"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg></span>Step 1</li><li class="current" aria-current="step"><span class="dot">2</span>Step 2</li><li><span class="dot">3</span>Step 3</li></ol></div>
+          <div class="card-body"><h3>Stepper</h3><p class="aka">aka progress steps · wizard · step indicator</p><p class="def">Shows progress through a multi-step process: which steps are done, which one is current and what’s left.</p></div>
+        </article>
+
+        <article class="card" id="t-skip-link" data-ui="card">
+          <div class="stage"><a class="skip-demo" href="#main" data-ui="skip-link">Skip to main content</a></div>
+          <div class="card-body"><h3>Skip link</h3><p class="aka">aka skip navigation</p><p class="def">A link at the very start of a page, hidden until it gets keyboard focus, that lets keyboard and screen reader users jump past the navigation. Press Tab at the top of this page to see the real one.</p></div>
+        </article>
+
+        <article class="card" id="t-back-to-top-button" data-ui="card">
+          <div class="stage"><button class="btn btn-secondary btn-sm" type="button" data-to-top data-ui="back-to-top-button"><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg>Back to top</button></div>
+          <div class="card-body"><h3>Back to top button</h3><p class="aka">aka scroll to top</p><p class="def">A button that scrolls a long page back to the start. A real one appears in the corner of this page once you’ve scrolled down.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= ACTIONS ================= -->
+    <section class="cat" id="actions" data-cat="actions" data-label="Actions" aria-labelledby="h-actions">
+      <div class="cat-head"><h2 id="h-actions" data-ui="heading">Buttons &amp; actions</h2><p>Controls that do something when pressed.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-button" data-ui="card">
+          <div class="stage"><button class="btn btn-primary" type="button" data-ui="button" data-toast="You pressed a Button.">Button</button></div>
+          <div class="card-body"><h3>Button</h3><p class="aka">aka primary button · action button</p><p class="def">A control that performs an action when pressed: save, send, delete, open. The primary button marks the single most important action in a view.</p></div>
+        </article>
+
+        <article class="card" id="t-secondary-button" data-ui="card">
+          <div class="stage"><button class="btn btn-secondary" type="button" data-ui="secondary-button" data-toast="You pressed a Secondary button.">Secondary button</button></div>
+          <div class="card-body"><h3>Secondary button</h3><p class="aka">aka outline button · outlined button</p><p class="def">A lower-emphasis button for the alternative action next to the primary one, like Cancel beside Save.</p></div>
+        </article>
+
+        <article class="card" id="t-ghost-button" data-ui="card">
+          <div class="stage"><button class="btn btn-ghost" type="button" data-ui="ghost-button" data-toast="You pressed a Ghost button.">Ghost button</button></div>
+          <div class="card-body"><h3>Ghost button</h3><p class="aka">aka text button · tertiary button · borderless button</p><p class="def">A button with no fill or border until you hover over it. Used for the least important actions so they don’t compete with the rest.</p></div>
+        </article>
+
+        <article class="card" id="t-icon-button" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="row">
+                <button class="icon-btn icon-btn-bordered" type="button" aria-label="Edit" data-tip="Edit" data-ui="icon-button" data-toast="Icon button: Edit"><svg class="ico" aria-hidden="true"><use href="#i-edit"/></svg></button>
+                <button class="icon-btn icon-btn-bordered" type="button" aria-label="Share" data-tip="Share" data-ui="icon-button" data-toast="Icon button: Share"><svg class="ico" aria-hidden="true"><use href="#i-share"/></svg></button>
+                <button class="icon-btn icon-btn-bordered" type="button" aria-label="Delete" data-tip="Delete" data-ui="icon-button" data-toast="Icon button: Delete (nothing was deleted)"><svg class="ico" aria-hidden="true"><use href="#i-trash"/></svg></button>
+              </div>
+              <span class="cap">Icon button</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Icon button</h3><p class="aka">aka icon-only button</p><p class="def">A button that shows only an icon, with no text. It needs an accessible label and usually a tooltip, because icons on their own are easy to misread.</p></div>
+        </article>
+
+        <article class="card" id="t-call-to-action" data-ui="card">
+          <div class="stage"><button class="btn btn-primary btn-lg cta" type="button" data-ui="call-to-action" data-toast="Calls to action start with a verb.">Call to action <svg class="ico" aria-hidden="true"><use href="#i-arrow-right"/></svg></button></div>
+          <div class="card-body"><h3>Call to action</h3><p class="aka">aka CTA</p><p class="def">The element that asks people to take the page’s main next step: Sign up, Buy now, Start free trial. Usually a prominent button whose label starts with a verb.</p></div>
+        </article>
+
+        <article class="card" id="t-floating-action-button" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="phone"><div class="phone-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><button class="fab" type="button" aria-label="Create" data-ui="floating-action-button" data-toast="Floating action button: Create"><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></div>
+              <span class="cap">Floating action button</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Floating action button</h3><p class="aka">aka FAB</p><p class="def">A circular button that floats above the content, usually in the bottom-right corner, for a screen’s most common action, like writing a new message.</p></div>
+        </article>
+
+        <article class="card" id="t-destructive-button" data-ui="card">
+          <div class="stage"><button class="btn btn-danger" type="button" data-ui="destructive-button" data-toast="Nothing was deleted. It’s only an example.">Destructive button</button></div>
+          <div class="card-body"><h3>Destructive button</h3><p class="aka">aka danger button · delete button</p><p class="def">A button for an action that deletes something or can’t easily be undone. It’s usually red and followed by a confirmation step.</p></div>
+        </article>
+
+        <article class="card" id="t-button-group" data-ui="card">
+          <div class="stage"><div class="btn-group" role="group" aria-label="Button group example" data-ui="button-group"><button class="btn btn-secondary btn-sm" type="button" data-toast="Button group: first button">Button</button><button class="btn btn-secondary btn-sm" type="button" data-toast="Button group: second button">Button</button><button class="btn btn-secondary btn-sm" type="button" data-toast="Button group: third button">Button</button></div></div>
+          <div class="card-body"><h3>Button group</h3><p class="aka">aka toolbar group</p><p class="def">Related buttons joined into one unit so they read as a set, such as Bold, Italic and Underline. Each button still does its own thing.</p></div>
+        </article>
+
+        <article class="card" id="t-split-button" data-ui="card">
+          <div class="stage">
+            <div class="split" data-ui="split-button">
+              <button class="btn btn-primary btn-sm" type="button" data-toast="Split button: default action">Split button</button>
+              <button class="btn btn-primary btn-sm split-arrow" type="button" data-menu aria-expanded="false" aria-label="More save options"><svg class="ico" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+              <div class="menu" hidden><button type="button" data-toast="Alternative action chosen.">Save as…</button><button type="button" data-toast="Alternative action chosen.">Save a copy</button></div>
+            </div>
+          </div>
+          <div class="card-body"><h3>Split button</h3><p class="aka">aka split dropdown button</p><p class="def">A button in two parts: the main part runs the default action, and the arrow opens a menu of related alternatives, like Save and Save as.</p></div>
+        </article>
+
+        <article class="card" id="t-toggle-button" data-ui="card">
+          <div class="stage"><button class="btn btn-toggle" type="button" aria-pressed="true" data-toggle-pressed data-ui="toggle-button">Toggle button</button></div>
+          <div class="card-body"><h3>Toggle button</h3><p class="aka">aka stateful button · on/off button</p><p class="def">A button that stays pressed until you press it again, switching something on or off, like Bold in a text editor.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= INPUTS ================= -->
+    <section class="cat" id="inputs" data-cat="inputs" data-label="Inputs" aria-labelledby="h-inputs">
+      <div class="cat-head"><h2 id="h-inputs" data-ui="heading">Inputs &amp; forms</h2><p>Controls for typing text, choosing options and picking values.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-text-field" data-ui="card">
+          <div class="stage"><div class="field"><input class="input pick" id="f-text" value="Text field" aria-label="Text field example" data-ui="text-field"></div></div>
+          <div class="card-body"><h3>Text field</h3><p class="aka">aka text input · input field · text box</p><p class="def">A single-line box for typing short text such as a name, an email address or a password.</p></div>
+        </article>
+
+        <article class="card" id="t-label" data-ui="card">
+          <div class="stage"><div class="field"><label class="field-label pick" for="f-label" data-ui="label">Label</label><input class="input" id="f-label" data-ui="text-field"></div></div>
+          <div class="card-body"><h3>Label</h3><p class="aka">aka field label · form label</p><p class="def">The text that says what a field is for. It stays visible while you type, unlike a placeholder, and is linked to its field for screen readers. An asterisk (*) often marks a required field.</p></div>
+        </article>
+
+        <article class="card" id="t-placeholder" data-ui="card">
+          <div class="stage"><div class="field"><input class="input ph-demo" id="f-ph" placeholder="Placeholder" aria-label="Placeholder example" data-ui="placeholder"></div></div>
+          <div class="card-body"><h3>Placeholder</h3><p class="aka">aka placeholder text · hint text</p><p class="def">Hint text shown inside an empty field that disappears as soon as you type. It shouldn’t replace a label, because it vanishes just when people need it.</p></div>
+        </article>
+
+        <article class="card" id="t-helper-text" data-ui="card">
+          <div class="stage"><div class="field"><label class="field-label" for="f-help">Email</label><input class="input" id="f-help" type="email" value="sam@example.com" aria-describedby="f-help-t" data-ui="text-field"><p class="field-help pick" id="f-help-t" data-ui="helper-text">Helper text: we only use this for receipts.</p></div></div>
+          <div class="card-body"><h3>Helper text</h3><p class="aka">aka hint · assistive text · supporting text</p><p class="def">A short line under a field that explains what to enter, what format to use or why it’s needed.</p></div>
+        </article>
+
+        <article class="card" id="t-error-message" data-ui="card">
+          <div class="stage"><div class="field field-err"><label class="field-label" for="f-err">Email</label><input class="input" id="f-err" type="text" value="sam@" aria-invalid="true" aria-describedby="f-err-t" data-ui="text-field"><p class="field-error pick" id="f-err-t" data-ui="error-message"><svg class="ico" aria-hidden="true"><use href="#i-error"/></svg>Error message: enter the full email address.</p></div></div>
+          <div class="card-body"><h3>Error message</h3><p class="aka">aka validation message · inline error · inline validation</p><p class="def">Text that appears when an input is invalid, saying what went wrong and how to fix it. Checking input as people type or leave a field is called inline validation.</p></div>
+        </article>
+
+        <article class="card" id="t-text-area" data-ui="card">
+          <div class="stage"><div class="field"><textarea class="input" id="f-area" rows="3" aria-label="Text area example" data-ui="text-area">Text area
+For longer, multi-line text. Drag the corner to resize.</textarea></div></div>
+          <div class="card-body"><h3>Text area</h3><p class="aka">aka multi-line text field · textarea</p><p class="def">A multi-line text box for longer input like comments, messages or descriptions. It can often be resized by dragging its corner.</p></div>
+        </article>
+
+        <article class="card" id="t-checkbox" data-ui="card">
+          <div class="stage">
+            <div class="checks" data-ui="checkbox">
+              <label class="check"><input type="checkbox" checked> Checkbox (checked)</label>
+              <label class="check"><input type="checkbox"> Checkbox (unchecked)</label>
+              <label class="check"><input type="checkbox" id="cb-indet"> Checkbox (indeterminate)</label>
+            </div>
+          </div>
+          <div class="card-body"><h3>Checkbox</h3><p class="aka">aka tick box · check box</p><p class="def">A square box for choosing any number of options, including none. A dash means indeterminate: only some items in a group are selected.</p></div>
+        </article>
+
+        <article class="card" id="t-radio-button" data-ui="card">
+          <div class="stage">
+            <fieldset class="checks" data-ui="radio-button">
+              <legend class="sr-only">Radio button example</legend>
+              <label class="check"><input type="radio" name="radio-demo" checked> Radio button (selected)</label>
+              <label class="check"><input type="radio" name="radio-demo"> Radio button</label>
+              <label class="check"><input type="radio" name="radio-demo"> Radio button</label>
+            </fieldset>
+          </div>
+          <div class="card-body"><h3>Radio button</h3><p class="aka">aka radio · option button</p><p class="def">A round option for choosing exactly one from a set: selecting one deselects the others. Named after the preset buttons on old car radios.</p></div>
+        </article>
+
+        <article class="card" id="t-toggle-switch" data-ui="card">
+          <div class="stage"><label class="switch" data-ui="toggle-switch"><input type="checkbox" role="switch" checked><span class="switch-track" aria-hidden="true"></span>Toggle switch</label></div>
+          <div class="card-body"><h3>Toggle switch</h3><p class="aka">aka switch · toggle</p><p class="def">An on/off control that takes effect immediately, like a light switch. If the change only applies after pressing Save, use a checkbox instead.</p></div>
+        </article>
+
+        <article class="card" id="t-select" data-ui="card">
+          <div class="stage"><div class="select-wrap" data-ui="select"><select class="input" aria-label="Select example"><option>Select</option><option>Option 1</option><option>Option 2</option><option>Option 3</option></select><svg class="ico" aria-hidden="true"><use href="#i-chevron-down"/></svg></div></div>
+          <div class="card-body"><h3>Select</h3><p class="aka">aka dropdown · select menu · picker</p><p class="def">A closed box that opens a list for choosing one value from many. Best when there are too many options to show as radio buttons.</p></div>
+        </article>
+
+        <article class="card" id="t-combobox" data-ui="card">
+          <div class="stage stage-start" style="justify-content:flex-start">
+            <div class="combo" data-ui="combobox">
+              <input class="input" id="combo-input" role="combobox" aria-expanded="true" aria-controls="combo-list" aria-autocomplete="list" aria-label="Find a term" value="me" autocomplete="off" spellcheck="false">
+              <ul class="combo-list" id="combo-list" role="listbox" aria-label="Matching terms"></ul>
+            </div>
+          </div>
+          <div class="card-body"><h3>Combobox</h3><p class="aka">aka autocomplete · typeahead · autosuggest</p><p class="def">A text field joined to a list of suggestions that narrows as you type. This one searches the terms on this page; pick one to jump to it.</p></div>
+        </article>
+
+        <article class="card" id="t-slider" data-ui="card">
+          <div class="stage"><div class="slider" data-ui="slider"><label for="f-slider">Slider</label><input type="range" id="f-slider" min="0" max="100" value="60"><output for="f-slider" id="f-slider-out">60</output></div></div>
+          <div class="card-body"><h3>Slider</h3><p class="aka">aka range slider · range input</p><p class="def">A handle you drag along a track to pick a value from a range, like volume. The handle is called the thumb; the line is the track.</p></div>
+        </article>
+
+        <article class="card" id="t-number-input" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="num" data-ui="number-input"><button type="button" aria-label="Decrease" data-num="-1"><svg class="ico" aria-hidden="true"><use href="#i-minus"/></svg></button><input type="text" inputmode="numeric" value="3" aria-label="Quantity" id="num-input"><button type="button" aria-label="Increase" data-num="1"><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></button></div>
+              <span class="cap">Number input</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Number input</h3><p class="aka">aka stepper input · spinner · quantity selector</p><p class="def">A field for numbers, with minus and plus buttons that step the value down or up.</p></div>
+        </article>
+
+        <article class="card" id="t-search-bar" data-ui="card">
+          <div class="stage"><div class="search search-demo" data-ui="search-bar"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg><input type="search" placeholder="Search bar" aria-label="Search bar example"></div></div>
+          <div class="card-body"><h3>Search bar</h3><p class="aka">aka search box · search field</p><p class="def">A text field for finding content, usually marked with a magnifying glass. The one at the top of this page filters these cards as you type.</p></div>
+        </article>
+
+        <article class="card" id="t-date-picker" data-ui="card">
+          <div class="stage">
+            <div class="datepicker" data-ui="date-picker">
+              <input class="input" id="dp-input" readonly aria-label="Selected date">
+              <div class="cal">
+                <div class="cal-head"><button class="icon-btn" type="button" id="dp-prev" aria-label="Previous month"><svg class="ico" aria-hidden="true"><use href="#i-chevron-left"/></svg></button><span id="dp-title" aria-live="polite"></span><button class="icon-btn" type="button" id="dp-next" aria-label="Next month"><svg class="ico" aria-hidden="true"><use href="#i-chevron-right"/></svg></button></div>
+                <div class="cal-grid" id="dp-grid"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body"><h3>Date picker</h3><p class="aka">aka calendar picker · date input</p><p class="def">A calendar that opens from a date field so people can pick a day instead of typing it in the right format. Today is outlined; the chosen day is filled.</p></div>
+        </article>
+
+        <article class="card" id="t-file-upload" data-ui="card">
+          <div class="stage"><label class="dropzone" id="dropzone" data-ui="file-upload"><input type="file" class="sr-only" id="file-input"><svg class="ico" aria-hidden="true"><use href="#i-upload"/></svg><strong>Drop zone</strong><span>Drag a file here or <u>browse</u></span></label></div>
+          <div class="card-body"><h3>File upload</h3><p class="aka">aka drop zone · file picker · uploader</p><p class="def">An area, usually dashed, where you can drag and drop files or click to choose them from your device. Try it: nothing leaves your browser.</p></div>
+        </article>
+
+        <article class="card" id="t-rating" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="rating" role="radiogroup" aria-label="Rating" id="rating" data-ui="rating">
+                <button type="button" role="radio" aria-checked="false" aria-label="1 star" data-v="1"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></button><button type="button" role="radio" aria-checked="false" aria-label="2 stars" data-v="2"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></button><button type="button" role="radio" aria-checked="false" aria-label="3 stars" data-v="3"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></button><button type="button" role="radio" aria-checked="true" aria-label="4 stars" data-v="4"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></button><button type="button" role="radio" aria-checked="false" aria-label="5 stars" data-v="5"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></button>
+              </div>
+              <span class="cap" id="rating-cap">Rating · 4 of 5</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Rating</h3><p class="aka">aka star rating</p><p class="def">A row of stars, or other icons, for scoring something on a fixed scale, usually 1 to 5.</p></div>
+        </article>
+
+        <article class="card" id="t-otp-input" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="otp" role="group" aria-label="One-time code" id="otp" data-ui="otp-input"><input maxlength="1" inputmode="numeric" value="4" aria-label="Digit 1"><input maxlength="1" inputmode="numeric" value="7" aria-label="Digit 2"><input maxlength="1" inputmode="numeric" value="1" aria-label="Digit 3"><input maxlength="1" inputmode="numeric" aria-label="Digit 4"><input maxlength="1" inputmode="numeric" aria-label="Digit 5"><input maxlength="1" inputmode="numeric" aria-label="Digit 6"></div>
+              <span class="cap">One-time code input</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>OTP input</h3><p class="aka">aka one-time code input · PIN input · verification code</p><p class="def">A row of single-character boxes for a short code sent by text or email. Focus jumps to the next box as you type.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= FEEDBACK ================= -->
+    <section class="cat" id="feedback" data-cat="feedback" data-label="Feedback" aria-labelledby="h-feedback">
+      <div class="cat-head"><h2 id="h-feedback" data-ui="heading">Feedback &amp; status</h2><p>How an interface tells people what just happened, or what’s happening now.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-alert" data-ui="card">
+          <div class="stage">
+            <div class="alerts" data-ui="alert">
+              <div class="alert info"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg>Info alert</div>
+              <div class="alert ok"><svg class="ico" aria-hidden="true"><use href="#i-check-circle"/></svg>Success alert</div>
+              <div class="alert warn"><svg class="ico" aria-hidden="true"><use href="#i-warn"/></svg>Warning alert</div>
+              <div class="alert err"><svg class="ico" aria-hidden="true"><use href="#i-error"/></svg>Error alert</div>
+            </div>
+          </div>
+          <div class="card-body"><h3>Alert</h3><p class="aka">aka callout · notice · inline message</p><p class="def">A message box inside the page that draws attention to important information. Its color and icon signal the tone: info, success, warning or error.</p></div>
+        </article>
+
+        <article class="card" id="t-toast" data-ui="card">
+          <div class="stage">
+            <div class="toast" data-ui="toast"><span class="toast-tag">Toast</span><span>Message sent.</span><button class="toast-action" type="button" data-toast="Undone. Toasts often offer one quick action.">Undo</button></div>
+            <button class="btn btn-secondary btn-sm" type="button" data-toast="I disappear on my own in a few seconds." data-ui="button">Show a real toast</button>
+          </div>
+          <div class="card-body"><h3>Toast</h3><p class="aka">aka snackbar · notification</p><p class="def">A small, brief message that pops up, usually at the bottom or top of the screen, to confirm an action, then disappears on its own.</p></div>
+        </article>
+
+        <article class="card" id="t-badge" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="row" data-ui="badge" style="gap:18px">
+                <span class="bell"><svg class="ico" aria-hidden="true"><use href="#i-bell"/></svg><span class="badge badge-count">3</span><span class="sr-only">3 notifications</span></span>
+                <span class="badge">Badge</span>
+                <span class="bell"><svg class="ico" aria-hidden="true"><use href="#i-inbox"/></svg><span class="badge-dot"></span><span class="sr-only">New messages</span></span>
+              </div>
+              <span class="cap">Count badge · text badge · dot</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Badge</h3><p class="aka">aka counter · pill · notification dot</p><p class="def">A small label or number attached to something to show a count or status, like unread messages. A badge with no number is a notification dot.</p></div>
+        </article>
+
+        <article class="card" id="t-tooltip" data-ui="card">
+          <div class="stage">
+            <div class="tip-demo"><span class="tooltip" role="tooltip" id="tip-demo" data-ui="tooltip">Tooltip</span><button class="icon-btn icon-btn-bordered" type="button" aria-label="More info" aria-describedby="tip-demo"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg></button></div>
+            <button class="btn btn-ghost btn-sm" type="button" data-tip="Tooltip: shows on hover and focus" data-ui="ghost-button">Hover or focus me</button>
+          </div>
+          <div class="card-body"><h3>Tooltip</h3><p class="aka">aka hint · info tip</p><p class="def">A small label that appears when you hover over or focus an element, explaining what it is. Text only; it disappears when you move away.</p></div>
+        </article>
+
+        <article class="card" id="t-progress-bar" data-ui="card">
+          <div class="stage">
+            <div class="progress" role="progressbar" aria-label="Determinate progress example" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" data-ui="progress-bar"><span style="width:62%"></span></div>
+            <div class="progress-meta"><span>Progress bar</span><span>62%</span></div>
+            <div class="progress indet" role="progressbar" aria-label="Indeterminate progress example" data-ui="progress-bar"><span></span></div>
+            <div class="progress-meta"><span>Indeterminate</span><span>—</span></div>
+          </div>
+          <div class="card-body"><h3>Progress bar</h3><p class="aka">aka progress indicator · loading bar</p><p class="def">A bar that fills up to show how much of a task is done. When the length of the wait is unknown, an indeterminate bar animates without a percentage.</p></div>
+        </article>
+
+        <article class="card" id="t-spinner" data-ui="card">
+          <div class="stage"><div class="an an-center"><span class="spinner" role="status" aria-label="Loading" data-ui="spinner"></span><span class="cap">Spinner</span></div></div>
+          <div class="card-body"><h3>Spinner</h3><p class="aka">aka loader · loading indicator · throbber</p><p class="def">A spinning shape that shows something is loading or processing when you can’t say how long it will take.</p></div>
+        </article>
+
+        <article class="card" id="t-skeleton-screen" data-ui="card">
+          <div class="stage">
+            <div class="an an-center" style="width:100%">
+              <div class="skel" aria-hidden="true" data-ui="skeleton-screen"><span class="sk sk-circle"></span><div><span class="sk sk-line"></span><span class="sk sk-line"></span><span class="sk sk-line short"></span></div></div>
+              <span class="cap">Skeleton screen</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Skeleton screen</h3><p class="aka">aka skeleton loader · content placeholder · ghost elements</p><p class="def">Grey shapes that mimic the layout of content while it loads, so the page feels faster and doesn’t jump when the real content arrives.</p></div>
+        </article>
+
+        <article class="card" id="t-empty-state" data-ui="card">
+          <div class="stage"><div class="empty-demo" data-ui="empty-state"><svg class="ico" aria-hidden="true"><use href="#i-inbox"/></svg><strong>Empty state</strong><span>No projects yet.</span><button class="btn btn-primary btn-sm" type="button" data-toast="A good empty state always offers a next step.">New project</button></div></div>
+          <div class="card-body"><h3>Empty state</h3><p class="aka">aka zero state · blank slate</p><p class="def">What a screen shows when there’s nothing to display yet: no messages, no results. A good one explains why and offers a next step.</p></div>
+        </article>
+
+        <article class="card" id="t-status-indicator" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <ul class="status-list" data-ui="status-indicator"><li><span class="sdot ok" aria-hidden="true"></span>Online</li><li><span class="sdot warn" aria-hidden="true"></span>Away</li><li><span class="sdot off" aria-hidden="true"></span>Offline</li></ul>
+              <span class="cap">Status indicator</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Status indicator</h3><p class="aka">aka presence indicator · status dot</p><p class="def">A small colored dot or icon showing the state of something: online or offline, running or stopped. Pair color with text or shape, since not everyone can tell colors apart.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= OVERLAYS ================= -->
+    <section class="cat" id="overlays" data-cat="overlays" data-label="Overlays" aria-labelledby="h-overlays">
+      <div class="cat-head"><h2 id="h-overlays" data-ui="heading">Overlays</h2><p>Layers that open on top of the page.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-modal" data-ui="card">
+          <div class="stage">
+            <div class="screen" aria-hidden="true"><div class="sc-scrim"></div><span class="sc-label">Scrim</span><div class="sc-modal">Modal</div></div>
+            <button class="btn btn-secondary btn-sm" type="button" data-open="demo-modal" data-ui="button">Open a real modal</button>
+          </div>
+          <div class="card-body"><h3>Modal</h3><p class="aka">aka dialog · modal dialog · pop-up</p><p class="def">A window that opens on top of the page and blocks everything behind it until you respond or close it. Used for focused tasks and confirmations.</p></div>
+        </article>
+
+        <article class="card" id="t-scrim" data-ui="card">
+          <div class="stage"><div class="screen" aria-hidden="true"><div class="sc-scrim pick"></div><span class="sc-label">Scrim</span></div></div>
+          <div class="card-body"><h3>Scrim</h3><p class="aka">aka overlay · backdrop · underlay</p><p class="def">A see-through dark layer placed over the page behind a modal, drawer or sheet. It dims the background and signals that the page underneath is inactive for now.</p></div>
+        </article>
+
+        <article class="card" id="t-drawer" data-ui="card">
+          <div class="stage">
+            <div class="screen" aria-hidden="true"><div class="sc-scrim"></div><div class="sc-drawer">Drawer</div></div>
+            <button class="btn btn-secondary btn-sm" type="button" data-open="demo-drawer" data-ui="button">Open a real drawer</button>
+          </div>
+          <div class="card-body"><h3>Drawer</h3><p class="aka">aka side sheet · off-canvas panel · flyout</p><p class="def">A panel that slides in from the edge of the screen, over the content. It often holds navigation, filters or details.</p></div>
+        </article>
+
+        <article class="card" id="t-bottom-sheet" data-ui="card">
+          <div class="stage stage-row">
+            <div class="phone" aria-hidden="true"><div class="phone-lines"><i></i><i></i><i></i><i></i></div><div class="sc-scrim"></div><div class="sheet-mock"><span class="handle"></span>Bottom sheet</div></div>
+            <button class="btn btn-secondary btn-sm" type="button" data-open="demo-sheet" data-ui="button">Open a real one</button>
+          </div>
+          <div class="card-body"><h3>Bottom sheet</h3><p class="aka">aka sheet · action sheet (iOS, for lists of actions)</p><p class="def">A panel that slides up from the bottom of the screen, often with a small handle you can drag. Common on phones because it keeps the page in view above it.</p></div>
+        </article>
+
+        <article class="card" id="t-popover" data-ui="card">
+          <div class="stage">
+            <div class="popover-demo">
+              <div class="popover" id="popover-demo" role="dialog" aria-label="Popover example" data-ui="popover"><strong>Popover</strong><span>Opens on click and can hold links and buttons.</span><a href="#t-tooltip">Compare with a tooltip</a></div>
+              <button class="btn btn-secondary btn-sm" type="button" aria-expanded="true" aria-controls="popover-demo" id="popover-trigger" data-ui="button">Popover trigger</button>
+            </div>
+          </div>
+          <div class="card-body"><h3>Popover</h3><p class="aka">aka popup · flyout</p><p class="def">A small floating panel attached to the element that opened it, often with an arrow pointing at it. Unlike a tooltip, it opens on click and can hold interactive content.</p></div>
+        </article>
+
+        <article class="card" id="t-lightbox" data-ui="card">
+          <div class="stage"><div class="lb" data-ui="lightbox" aria-hidden="true"><span class="lb-close"><svg class="ico"><use href="#i-x"/></svg></span><span class="lb-arrow l"><svg class="ico"><use href="#i-chevron-left"/></svg></span><div class="lb-img"><svg class="ico"><use href="#i-image"/></svg></div><span class="lb-arrow r"><svg class="ico"><use href="#i-chevron-right"/></svg></span><span class="lb-cap">Lightbox · 2 / 8</span></div></div>
+          <div class="card-body"><h3>Lightbox</h3><p class="aka">aka image viewer · gallery overlay</p><p class="def">An overlay that shows an image or video enlarged over a darkened page, often with arrows to move through a gallery.</p></div>
+        </article>
+
+        <article class="card" id="t-command-palette" data-ui="card">
+          <div class="stage">
+            <div class="pal-mock" aria-hidden="true"><div class="pm-in"><svg class="ico"><use href="#i-search"/></svg>co<kbd>⌘K</kbd></div><div class="pm-row on">Command palette</div><div class="pm-row">Combobox</div><div class="pm-row">Coach mark</div></div>
+            <button class="btn btn-secondary btn-sm" type="button" data-open-palette data-ui="button">Open the real one</button>
+          </div>
+          <div class="card-body"><h3>Command palette</h3><p class="aka">aka command menu · quick switcher · ⌘K menu</p><p class="def">A search box that opens over everything, usually with ⌘K or Ctrl+K, so you can jump anywhere or run any command by typing. Press ⌘K on this page to try it.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= CONTENT ================= -->
+    <section class="cat" id="content" data-cat="content" data-label="Content" aria-labelledby="h-content">
+      <div class="cat-head"><h2 id="h-content" data-ui="heading">Content &amp; data display</h2><p>Containers and patterns for showing information.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-avatar" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="avatars" data-ui="avatar"><span class="avatar a1" aria-label="Avatar" role="img">AV</span><span class="avatar avatar-lg" aria-label="Avatar" role="img">AV</span><div class="avatar-stack" role="img" aria-label="Avatar group, 7 people"><span class="avatar a2">JL</span><span class="avatar a1">MK</span><span class="avatar">SR</span><span class="avatar more">+4</span></div></div>
+              <span class="cap">Avatar · avatar group</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Avatar</h3><p class="aka">aka profile picture · user icon</p><p class="def">A small image, icon or set of initials standing for a person or account. Overlapping avatars form an avatar group, or stack.</p></div>
+        </article>
+
+        <article class="card" id="t-chip" data-ui="card">
+          <div class="stage">
+            <div class="chips-demo" data-ui="chip"><span class="chip">Chip</span><span class="chip" aria-pressed="true"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Selected chip</span><span class="chip">Removable chip<button type="button" aria-label="Remove chip" data-toast="Chip removed (it’s back when you reload)." data-remove-chip><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button></span></div>
+          </div>
+          <div class="card-body"><h3>Chip</h3><p class="aka">aka tag · pill · token</p><p class="def">A compact, rounded element standing for a choice, filter, attribute or tag. Chips can be selected, removed or clicked. The category filters above are chips.</p></div>
+        </article>
+
+        <article class="card" id="t-icon" data-ui="card">
+          <div class="stage"><div class="an an-center"><div class="icons" data-ui="icon"><svg class="ico" aria-hidden="true"><use href="#i-home"/></svg><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg><svg class="ico" aria-hidden="true"><use href="#i-bell"/></svg><svg class="ico" aria-hidden="true"><use href="#i-sliders"/></svg><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg></div><span class="cap">Icon</span></div></div>
+          <div class="card-body"><h3>Icon</h3><p class="aka">aka glyph · pictogram</p><p class="def">A small symbol that stands for an action, object or idea: a magnifying glass for search, a bell for notifications. Give unfamiliar icons a text label.</p></div>
+        </article>
+
+        <article class="card" id="t-accordion" data-ui="card">
+          <div class="stage">
+            <div class="accordion" data-ui="accordion">
+              <details open><summary>Accordion item</summary><p>Accordion panel: the content that expands.</p></details>
+              <details><summary>Accordion item</summary><p>Opening one item can close the others, or not.</p></details>
+              <details><summary>Accordion item</summary><p>Great for FAQs.</p></details>
+            </div>
+          </div>
+          <div class="card-body"><h3>Accordion</h3><p class="aka">aka expander · collapsible · disclosure</p><p class="def">A vertical stack of headers that each expand to show content and collapse to hide it. Saves space on long pages like FAQs.</p></div>
+        </article>
+
+        <article class="card" id="t-carousel" data-ui="card">
+          <div class="stage">
+            <div class="an an-center" style="width:100%">
+              <div class="carousel" id="carousel" role="region" aria-roledescription="carousel" aria-label="Example carousel" data-ui="carousel">
+                <div class="car-track"><div class="car-slide" role="group" aria-roledescription="slide" aria-label="1 of 3">Slide 1 of 3</div><div class="car-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">Slide 2 of 3</div><div class="car-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">Slide 3 of 3</div></div>
+                <button class="car-btn prev" type="button" aria-label="Previous slide"><svg class="ico" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+                <button class="car-btn next" type="button" aria-label="Next slide"><svg class="ico" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+                <div class="car-dots"><button type="button" aria-label="Go to slide 1" aria-current="true"></button><button type="button" aria-label="Go to slide 2"></button><button type="button" aria-label="Go to slide 3"></button></div>
+              </div>
+              <span class="cap">Carousel · arrows · pagination dots</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Carousel</h3><p class="aka">aka slider · slideshow · gallery</p><p class="def">A row of slides shown one at a time and moved with arrows, swipes or dots. The dots are called pagination dots or indicators.</p></div>
+        </article>
+
+        <article class="card wide" id="t-table" data-ui="card">
+          <div class="stage">
+            <div class="tbl-wrap" data-ui="table">
+              <table class="tbl">
+                <thead><tr><th scope="col">Column header <svg class="ico" aria-hidden="true"><use href="#i-sort"/></svg></th><th scope="col">Column header</th><th scope="col">Column header</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Row header</th><td>Cell</td><td>Cell</td></tr>
+                  <tr><th scope="row">Row header</th><td>Cell</td><td>Cell</td></tr>
+                  <tr><th scope="row">Row header</th><td>Cell</td><td>Cell</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-body"><h3>Table</h3><p class="aka">aka data table · data grid</p><p class="def">Data laid out in rows and columns so values can be compared. Column headers label each column and are often clickable to sort; the arrow is a sort indicator. Hover a row to highlight it.</p></div>
+        </article>
+
+        <article class="card" id="t-list" data-ui="card">
+          <div class="stage">
+            <ul class="list-demo" data-ui="list">
+              <li><span class="avatar avatar-sm a1">LI</span><span class="li-text"><strong>List item</strong><span>Secondary text</span></span><span class="li-meta">Meta</span></li>
+              <li><span class="avatar avatar-sm a2">LI</span><span class="li-text"><strong>List item</strong><span>Secondary text</span></span><span class="li-meta">Meta</span></li>
+              <li><span class="avatar avatar-sm">LI</span><span class="li-text"><strong>List item</strong><span>Secondary text</span></span><span class="li-meta">Meta</span></li>
+            </ul>
+          </div>
+          <div class="card-body"><h3>List</h3><p class="aka">aka list view</p><p class="def">A vertical run of similar items, one per row. A list item often has leading media, primary and secondary text, and trailing metadata or an action.</p></div>
+        </article>
+
+        <article class="card" id="t-thumbnail" data-ui="card">
+          <div class="stage"><div class="an an-center"><div class="thumbs" data-ui="thumbnail"><span class="thumb a1"><svg class="ico" aria-hidden="true"><use href="#i-image"/></svg></span><span class="thumb a2"><svg class="ico" aria-hidden="true"><use href="#i-image"/></svg></span><span class="thumb"><svg class="ico" aria-hidden="true"><use href="#i-image"/></svg></span></div><span class="cap">Thumbnail</span></div></div>
+          <div class="card-body"><h3>Thumbnail</h3><p class="aka">aka thumb · preview image</p><p class="def">A small preview standing in for a larger image, video or file. Clicking it usually opens the full version.</p></div>
+        </article>
+
+        <article class="card" id="t-keyboard-shortcut" data-ui="card">
+          <div class="stage"><div class="an an-center"><p class="kbd-demo" data-ui="keyboard-shortcut"><kbd>⌘</kbd><kbd>K</kbd><span>or</span><kbd>Ctrl</kbd><kbd>K</kbd></p><span class="cap">Keyboard shortcut</span></div></div>
+          <div class="card-body"><h3>Keyboard shortcut</h3><p class="aka">aka hotkey · key binding · accelerator</p><p class="def">A key or key combination that runs a command without the mouse, shown as key caps. Here: / to search, ⌘K to jump to a term, I for Inspect mode, Esc to close.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= TYPOGRAPHY ================= -->
+    <section class="cat" id="type" data-cat="type" data-label="Typography" aria-labelledby="h-type">
+      <div class="cat-head"><h2 id="h-type" data-ui="heading">Typography</h2><p>Names for text styles, and for the space in and around letters.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-heading" data-ui="card">
+          <div class="stage stage-start"><div class="type-stack" data-ui="heading"><p class="ts-h1">Heading 1</p><p class="ts-h2">Heading 2</p><p class="ts-h3">Heading 3</p></div></div>
+          <div class="card-body"><h3>Heading</h3><p class="aka">aka title · headline · H1–H6</p><p class="def">A title that names a page or section. Levels run from H1 (the page title, used once) down to H6, and together they form the page’s outline.</p></div>
+        </article>
+
+        <article class="card" id="t-eyebrow" data-ui="card">
+          <div class="stage stage-start"><div class="type-stack"><p class="eyebrow pick" data-ui="eyebrow">Eyebrow</p><p class="ts-h2">Headline sits below it</p></div></div>
+          <div class="card-body"><h3>Eyebrow</h3><p class="aka">aka overline · kicker</p><p class="def">A short, small label above a headline, often in capitals, that gives it a category or context.</p></div>
+        </article>
+
+        <article class="card" id="t-subheading" data-ui="card">
+          <div class="stage stage-start"><div class="type-stack"><p class="ts-h2">Headline</p><p class="ts-sub pick" data-ui="subheading">Subheading: adds context under the headline.</p></div></div>
+          <div class="card-body"><h3>Subheading</h3><p class="aka">aka subhead · subtitle · deck (journalism)</p><p class="def">A secondary line under a headline that adds detail, or a smaller heading that breaks a long section into parts.</p></div>
+        </article>
+
+        <article class="card" id="t-body-text" data-ui="card">
+          <div class="stage stage-start"><p class="ts-body" data-ui="body-text">Body text is the main reading text of a page. On screens it’s usually about 16px, with lines of 45–75 characters and roomy line height.</p></div>
+          <div class="card-body"><h3>Body text</h3><p class="aka">aka body copy · paragraph text</p><p class="def">The main running text: the paragraphs people actually read, as opposed to headings, labels and captions.</p></div>
+        </article>
+
+        <article class="card" id="t-caption" data-ui="card">
+          <div class="stage"><figure class="figure-demo"><div class="img-ph" aria-hidden="true"><svg class="ico"><use href="#i-image"/></svg></div><figcaption class="pick" data-ui="caption">Caption: a short line describing the image above.</figcaption></figure></div>
+          <div class="card-body"><h3>Caption</h3><p class="aka">aka figcaption · cutline</p><p class="def">Small text next to an image, chart or table that describes it or credits its source.</p></div>
+        </article>
+
+        <article class="card" id="t-pull-quote" data-ui="card">
+          <div class="stage stage-start"><blockquote class="pullquote" data-ui="pull-quote">“Pull quote”<cite>A line lifted from the article and set large.</cite></blockquote></div>
+          <div class="card-body"><h3>Pull quote</h3><p class="aka">aka blockquote · callout quote</p><p class="def">A short, striking line lifted from the text and set large to catch the eye. A blockquote is the general name for quoted text set apart from the rest.</p></div>
+        </article>
+
+        <article class="card" id="t-microcopy" data-ui="card">
+          <div class="stage"><div class="an an-center"><div class="micro"><button class="btn btn-primary btn-sm" type="button" data-toast="Microcopy answers the question people have right before they click.">Start free trial</button><p class="pick" data-ui="microcopy">No credit card required. Cancel anytime.</p></div><span class="cap">Microcopy</span></div></div>
+          <div class="card-body"><h3>Microcopy</h3><p class="aka">aka UX copy · UI text</p><p class="def">The small bits of text that guide people through an interface: button labels, hints, error messages, confirmations. Small words with a big effect on whether people finish a task.</p></div>
+        </article>
+
+        <article class="card" id="t-truncation" data-ui="card">
+          <div class="stage"><p class="trunc" title="Truncated text is cut off with an ellipsis when it runs out of room in its container" data-ui="truncation">Truncated text is cut off with an ellipsis when it runs out of room in its container</p></div>
+          <div class="card-body"><h3>Truncation</h3><p class="aka">aka ellipsis · text overflow</p><p class="def">Shortening text that doesn’t fit, usually ending it with an ellipsis (…). Always give a way to see the full text, such as a tooltip.</p></div>
+        </article>
+
+        <article class="card" id="t-line-height" data-ui="card">
+          <div class="stage"><div class="an an-center"><p class="leading" data-ui="line-height">Each shaded band is one line box. Line height is the distance from one line of text to the next, here 22px on 14px type.</p><span class="cap">Line height · 22px</span></div></div>
+          <div class="card-body"><h3>Line height</h3><p class="aka">aka leading</p><p class="def">The vertical distance from one line of text to the next. 1.4 to 1.6 times the font size is comfortable for body text. Printers call it leading, after the strips of lead placed between lines.</p></div>
+        </article>
+
+        <article class="card" id="t-letter-spacing" data-ui="card">
+          <div class="stage"><div class="tracking" data-ui="letter-spacing"><span style="letter-spacing:-.06em">Tight tracking</span><span>Normal tracking</span><span style="letter-spacing:.22em;font-size:13px">WIDE TRACKING</span></div></div>
+          <div class="card-body"><h3>Letter spacing</h3><p class="aka">aka tracking · character spacing</p><p class="def">The even space between all the letters in a run of text. Loosen it for small capital labels; tighten it slightly for large headlines.</p></div>
+        </article>
+
+        <article class="card" id="t-kerning" data-ui="card">
+          <div class="stage"><div class="kern" data-ui="kerning"><div class="an an-center"><span class="word k-off">AVA</span><span class="cap">Kerning off</span></div><div class="an an-center"><span class="word k-on">AVA</span><span class="cap">Kerning on</span></div></div></div>
+          <div class="card-body"><h3>Kerning</h3><p class="aka">aka pair kerning</p><p class="def">Adjusting the space between particular pairs of letters, like A and V, so they look evenly spaced. Tracking changes every gap; kerning changes pairs.</p></div>
+        </article>
+
+        <article class="card" id="t-font-weight" data-ui="card">
+          <div class="stage"><div class="weights" data-ui="font-weight"><span style="font-weight:400">Regular 400</span><span style="font-weight:500">Medium 500</span><span style="font-weight:700">Bold 700</span><span style="font-weight:900">Black 900</span></div></div>
+          <div class="card-body"><h3>Font weight</h3><p class="aka">aka weight · boldness</p><p class="def">How thick a typeface’s strokes are, on a scale from Thin (100) to Black (900). Regular is 400 and Bold is 700.</p></div>
+        </article>
+
+        <article class="card" id="t-typeface-classes" data-ui="card">
+          <div class="stage"><div class="faces" data-ui="typeface-classes"><span class="f-serif">Serif</span><span>Sans-serif</span><span class="f-mono">Monospace</span></div></div>
+          <div class="card-body"><h3>Serif, sans-serif &amp; monospace</h3><p class="aka">aka typeface classes · font families</p><p class="def">Serif typefaces have small strokes at the ends of letters; sans-serif (“without serif”) typefaces don’t. In monospace, every character is the same width, which suits code.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= STATES ================= -->
+    <section class="cat" id="states" data-cat="states" data-label="States" aria-labelledby="h-states">
+      <div class="cat-head"><h2 id="h-states" data-ui="heading">States</h2><p>How one element changes as people interact with it. Each button below is frozen in the state it names.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-default-state" data-ui="card">
+          <div class="stage"><button class="btn btn-primary" type="button" data-ui="default-state">Default</button></div>
+          <div class="card-body"><h3>Default state</h3><p class="aka">aka enabled · rest · idle</p><p class="def">How an element looks at rest, before anyone interacts with it.</p></div>
+        </article>
+
+        <article class="card" id="t-hover-state" data-ui="card">
+          <div class="stage"><button class="btn btn-primary is-hover" type="button" data-ui="hover-state">Hover</button></div>
+          <div class="card-body"><h3>Hover state</h3><p class="aka">aka mouseover · rollover</p><p class="def">How an element changes when a mouse pointer moves over it, signaling that it’s interactive. Touch screens have no hover, so never hide essential information behind it.</p></div>
+        </article>
+
+        <article class="card" id="t-active-state" data-ui="card">
+          <div class="stage"><button class="btn btn-primary is-active" type="button" data-ui="active-state">Pressed</button></div>
+          <div class="card-body"><h3>Active state</h3><p class="aka">aka pressed state</p><p class="def">How an element looks at the moment it’s being clicked or tapped, usually a little darker or pushed in.</p></div>
+        </article>
+
+        <article class="card" id="t-focus-state" data-ui="card">
+          <div class="stage"><button class="btn btn-primary is-focus" type="button" data-ui="focus-state">Focus</button></div>
+          <div class="card-body"><h3>Focus state</h3><p class="aka">aka focus ring · focus indicator</p><p class="def">The visible ring on whichever element will receive keyboard input. Essential for keyboard users: press Tab on this page and watch it move.</p></div>
+        </article>
+
+        <article class="card" id="t-disabled-state" data-ui="card">
+          <div class="stage"><button class="btn btn-primary" type="button" disabled data-ui="disabled-state">Disabled</button></div>
+          <div class="card-body"><h3>Disabled state</h3><p class="aka">aka inactive · greyed out</p><p class="def">A faded look showing that an element can’t be used right now. Say why nearby when you can; a silently disabled button is frustrating.</p></div>
+        </article>
+
+        <article class="card" id="t-selected-state" data-ui="card">
+          <div class="stage"><div class="seg" role="group" aria-label="Selected state example" data-ui="selected-state" data-single="aria-pressed"><button type="button" aria-pressed="false">Option</button><button type="button" aria-pressed="true">Selected</button><button type="button" aria-pressed="false">Option</button></div></div>
+          <div class="card-body"><h3>Selected state</h3><p class="aka">aka checked · current · on</p><p class="def">Shows which item in a set is currently chosen, such as a tab, a list row or a chip. Unlike hover or pressed, it stays until something else is chosen.</p></div>
+        </article>
+
+        <article class="card" id="t-loading-state" data-ui="card">
+          <div class="stage"><button class="btn btn-primary is-loading" type="button" aria-busy="true" aria-disabled="true" data-ui="loading-state"><span class="spinner spinner-sm" aria-hidden="true"></span>Loading…</button></div>
+          <div class="card-body"><h3>Loading state</h3><p class="aka">aka busy · pending</p><p class="def">Shown while an action is in progress: the control stops responding for a moment and a spinner or progress indicator joins or replaces the label.</p></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= CONCEPTS ================= -->
+    <section class="cat" id="concepts" data-cat="concepts" data-label="Concepts" aria-labelledby="h-concepts">
+      <div class="cat-head"><h2 id="h-concepts" data-ui="heading">UX concepts</h2><p>The ideas and vocabulary behind the design, not just the parts.</p><span class="cat-count"></span></div>
+      <div class="grid">
+
+        <article class="card" id="t-affordance" data-ui="card">
+          <div class="stage"><div class="afford" data-ui="affordance"><div class="an an-center"><button class="btn btn-primary aff-yes" type="button" data-toast="Strong affordance: it looked pressable, so you pressed it.">Press</button><span class="cap">Strong affordance</span></div><div class="an an-center"><span class="aff-no">Press</span><span class="cap">Weak affordance</span></div></div></div>
+          <div class="card-body"><h3>Affordance</h3><p class="aka">aka signifier (the cue that shows it)</p><p class="def">A quality that suggests how something can be used: a raised button looks pressable, a handle looks pullable. The visual cues that communicate it are called signifiers.</p></div>
+        </article>
+
+        <article class="card" id="t-visual-hierarchy" data-ui="card">
+          <div class="stage stage-start"><div class="vh" data-ui="visual-hierarchy"><p class="vh1">Visual hierarchy</p><p class="vh2">Size, weight and color tell you what to read first</p><p class="vh3">…and what can wait until later.</p></div></div>
+          <div class="card-body"><h3>Visual hierarchy</h3><p class="aka">aka information hierarchy · emphasis</p><p class="def">Arranging elements so their order of importance is obvious at a glance, using size, weight, color, contrast, position and spacing.</p></div>
+        </article>
+
+        <article class="card" id="t-microinteraction" data-ui="card">
+          <div class="stage"><div class="an an-center"><button class="like" type="button" aria-pressed="false" aria-label="Like" id="like" data-ui="microinteraction"><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg><span id="like-count">128</span></button><span class="cap">Microinteraction · click the heart</span></div></div>
+          <div class="card-body"><h3>Microinteraction</h3><p class="aka">aka micro-animation · delight</p><p class="def">A small, single-purpose moment of feedback, like a heart that pops when you like something or a switch that slides. It confirms the action and adds personality.</p></div>
+        </article>
+
+        <article class="card" id="t-progressive-disclosure" data-ui="card">
+          <div class="stage">
+            <div class="pd" data-ui="progressive-disclosure">
+              <label class="field-label" for="pd-name">Project name</label><input class="input" id="pd-name" value="Spring launch">
+              <details><summary><svg class="ico" aria-hidden="true"><use href="#i-chevron-right"/></svg>Show advanced options</summary><div class="pd-more"><label class="check"><input type="checkbox"> Private project</label><label class="check"><input type="checkbox" checked> Email updates</label></div></details>
+            </div>
+          </div>
+          <div class="card-body"><h3>Progressive disclosure</h3><p class="aka">aka staged disclosure · show more</p><p class="def">Showing only the essentials first and revealing advanced or rarely used options on request. Keeps things simple for beginners without limiting experts.</p></div>
+        </article>
+
+        <article class="card" id="t-coach-mark" data-ui="card">
+          <div class="stage">
+            <div class="coach" data-ui="coach-mark">
+              <button class="btn btn-secondary btn-sm coach-target" type="button" data-toast="This is the feature the coach mark points at.">New report</button>
+              <div class="coach-bubble" role="note"><span class="coach-step">Step 1 of 3</span><strong>Coach mark</strong><span>Points at a feature to teach it during onboarding.</span><div class="coach-actions"><button class="btn btn-ghost btn-xs" type="button" data-toast="Tour skipped.">Skip</button><button class="btn btn-primary btn-xs" type="button" data-toast="Next step (this tour is only one step long).">Next</button></div></div>
+            </div>
+          </div>
+          <div class="card-body"><h3>Coach mark</h3><p class="aka">aka product tour · onboarding tooltip · walkthrough · spotlight</p><p class="def">A callout that points at part of the interface to teach it, usually one step in a product tour for new users.</p></div>
+        </article>
+
+        <article class="card" id="t-dark-pattern" data-ui="card">
+          <div class="stage">
+            <div class="an an-center">
+              <div class="dp" data-ui="dark-pattern"><strong>Get 10% off your first order!</strong><button class="btn btn-primary btn-sm" type="button" data-toast="That was the honest button.">Yes, save 10%</button><button class="dp-shame pick" type="button" data-toast="That guilt trip is called confirmshaming.">No thanks, I hate saving money</button></div>
+              <span class="cap">Dark pattern · confirmshaming</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Dark pattern</h3><p class="aka">aka deceptive design · deceptive pattern</p><p class="def">A design that tricks people into doing something they didn’t mean to: guilt-trip opt-outs (confirmshaming), pre-ticked boxes, cancel buttons that are hard to find. Avoid them.</p></div>
+        </article>
+
+        <article class="card" id="t-wireframe" data-ui="card">
+          <div class="stage"><div class="an an-center"><div class="wire" aria-hidden="true" data-ui="wireframe"><span class="w-bar"></span><span class="w-img"></span><span class="w-line"></span><span class="w-line"></span><span class="w-line short"></span><span class="w-btn"></span></div><span class="cap">Wireframe</span></div></div>
+          <div class="card-body"><h3>Wireframe</h3><p class="aka">aka lo-fi · low-fidelity sketch</p><p class="def">A rough sketch of a screen’s layout and structure: boxes, lines and crossed-out image placeholders, no color or real content. It comes before a mockup and a prototype.</p></div>
+        </article>
+
+        <article class="card" id="t-user-flow" data-ui="card">
+          <div class="stage"><div class="an an-center"><ol class="flow" data-ui="user-flow"><li>Sign up</li><li>Verify</li><li>Home</li></ol><span class="cap">User flow</span></div></div>
+          <div class="card-body"><h3>User flow</h3><p class="aka">aka task flow · flow diagram</p><p class="def">A diagram of the path someone takes through screens and decisions to finish a task, from the entry point to the goal.</p></div>
+        </article>
+
+        <article class="card" id="t-breakpoint" data-ui="card">
+          <div class="stage"><div class="bp" data-ui="breakpoint"><div class="an an-center"><span class="bp-dev bp-phone"></span><span class="cap">375px</span></div><div class="an an-center"><span class="bp-dev bp-tab"></span><span class="cap">768px</span></div><div class="an an-center"><span class="bp-dev bp-desk"></span><span class="cap">1280px</span></div></div></div>
+          <div class="card-body"><h3>Breakpoint</h3><p class="aka">aka media query breakpoint</p><p class="def">A screen width at which a responsive layout changes, for example when a sidebar appears at 960px. Common breakpoints roughly match phone, tablet and desktop widths.</p></div>
+        </article>
+
+        <article class="card" id="t-design-token" data-ui="card">
+          <div class="stage">
+            <div class="an an-center" style="width:100%">
+              <dl class="tokens" data-ui="design-token">
+                <div><dt><span class="sw" aria-hidden="true"></span>color.label</dt><dd data-token="--label">#6A2FEA</dd></div>
+                <div><dt>space.4</dt><dd>16px</dd></div>
+                <div><dt>radius.md</dt><dd>8px</dd></div>
+                <div><dt>font.body</dt><dd>15px</dd></div>
+              </dl>
+              <span class="cap">Design tokens</span>
+            </div>
+          </div>
+          <div class="card-body"><h3>Design token</h3><p class="aka">aka token · design variable</p><p class="def">A named value, such as a color, spacing step, font size or corner radius, stored once and reused everywhere so the design stays consistent and can change in one place.</p></div>
+        </article>
+
+        <div class="card full glossary-card" data-ui="card">
+          <div class="gl-head"><h3>More UX vocabulary</h3><span class="cap">Description list</span></div>
+          <dl class="glossary" data-ui="description-list">
+            <div id="t-eight-point-grid"><dt>8-point grid</dt><dd>A spacing system where every size and gap is a multiple of 8px (8, 16, 24, 32…), which keeps layouts consistent.</dd></div>
+            <div id="t-ab-test"><dt>A/B test</dt><dd>Showing two versions of a design to different groups of people and measuring which one performs better.</dd></div>
+            <div id="t-accessibility"><dt>Accessibility (a11y)</dt><dd>Designing so people with disabilities can use a product: screen reader users, keyboard users, people with low vision or color blindness. “a11y” stands for the 11 letters between the a and the y.</dd></div>
+            <div id="t-card-sorting"><dt>Card sorting</dt><dd>A research method where people group topics written on cards, revealing how they expect content to be organized.</dd></div>
+            <div id="t-chrome"><dt>Chrome</dt><dd>The parts of an interface around the content, such as toolbars, frames and navigation. Not the browser.</dd></div>
+            <div id="t-cognitive-load"><dt>Cognitive load</dt><dd>The mental effort it takes to use an interface. Fewer choices, clear labels and familiar patterns keep it low.</dd></div>
+            <div id="t-component"><dt>Component</dt><dd>A reusable piece of UI, such as a button, card or modal, built once and used in many places.</dd></div>
+            <div id="t-conversion"><dt>Conversion</dt><dd>When a visitor completes a goal you care about, like signing up or buying. The conversion rate is the share of visitors who do.</dd></div>
+            <div id="t-dark-mode"><dt>Dark mode</dt><dd>A color scheme with light text on dark backgrounds. This page follows your system setting.</dd></div>
+            <div id="t-description-list"><dt>Description list</dt><dd>A list of terms paired with their definitions, like this one. In HTML it’s the &lt;dl&gt; element.</dd></div>
+            <div id="t-design-system"><dt>Design system</dt><dd>A shared library of components, tokens, patterns and guidelines that keeps a product consistent across teams.</dd></div>
+            <div id="t-edge-case"><dt>Edge case</dt><dd>An unusual situation at the limits of normal use: an empty list, a very long name, no network connection.</dd></div>
+            <div id="t-fitts-law"><dt>Fitts’s law</dt><dd>The time it takes to reach a target depends on its size and distance. Big, close targets are faster to hit.</dd></div>
+            <div id="t-friction"><dt>Friction</dt><dd>Anything that slows people down or makes a task harder. Sometimes added on purpose, like asking for confirmation before deleting.</dd></div>
+            <div id="t-gestalt-principles"><dt>Gestalt principles</dt><dd>Rules for how people see groups: things that are close together (proximity) or look alike (similarity) are seen as related.</dd></div>
+            <div id="t-handoff"><dt>Handoff</dt><dd>The point where designs pass to developers, along with specs, assets and notes on how things should behave.</dd></div>
+            <div id="t-happy-path"><dt>Happy path</dt><dd>The default route through a flow where everything goes right, with no errors or detours.</dd></div>
+            <div id="t-heuristic-evaluation"><dt>Heuristic evaluation</dt><dd>An expert review of an interface against established rules of thumb, such as Nielsen’s 10 usability heuristics.</dd></div>
+            <div id="t-hicks-law"><dt>Hick’s law</dt><dd>The more choices people have, the longer they take to decide.</dd></div>
+            <div id="t-information-architecture"><dt>Information architecture (IA)</dt><dd>How content is organized, structured and labeled so people can find what they need.</dd></div>
+            <div id="t-inspector-panel"><dt>Inspector panel</dt><dd>A panel showing the properties of whatever is selected. Design tools keep one along the right edge; Inspect mode on this page opens one.</dd></div>
+            <div id="t-jakobs-law"><dt>Jakob’s law</dt><dd>People spend most of their time on other sites, so they expect yours to work the same way theirs do.</dd></div>
+            <div id="t-legend"><dt>Legend</dt><dd>A key that explains the symbols, colors or marks in a chart, map or diagram. The hero at the top of this page has one.</dd></div>
+            <div id="t-mental-model"><dt>Mental model</dt><dd>What a person believes about how a system works. Designs that match it feel intuitive.</dd></div>
+            <div id="t-mockup"><dt>Mockup</dt><dd>A static, high-fidelity picture of a screen with real colors, type and images. It shows how it will look, not how it works.</dd></div>
+            <div id="t-mvp"><dt>MVP</dt><dd>Minimum viable product: the smallest version of a product you can release to learn whether it solves a real problem.</dd></div>
+            <div id="t-onboarding"><dt>Onboarding</dt><dd>The first-run experience that helps new users get set up and reach their first success.</dd></div>
+            <div id="t-persona"><dt>Persona</dt><dd>A fictional, research-based profile of a typical user that keeps a team focused on real needs.</dd></div>
+            <div id="t-prototype"><dt>Prototype</dt><dd>A clickable or interactive simulation of a design, used to test ideas before building them for real.</dd></div>
+            <div id="t-redlines"><dt>Redlines</dt><dd>Annotated specs that mark sizes, spacing and colors for developers, named after the red lines once drawn on them. This page is one big redline.</dd></div>
+            <div id="t-responsive-design"><dt>Responsive design</dt><dd>Layouts that adapt to any screen size, rearranging at breakpoints instead of shipping separate mobile and desktop sites.</dd></div>
+            <div id="t-skeuomorphism"><dt>Skeuomorphism</dt><dd>Making digital elements imitate real objects, like leather textures, paper edges or glossy buttons. Its opposite is flat design.</dd></div>
+            <div id="t-usability-testing"><dt>Usability testing</dt><dd>Watching real people try to complete tasks with a design to find where they struggle.</dd></div>
+            <div id="t-user-journey-map"><dt>User journey map</dt><dd>A timeline of a person’s steps, thoughts and feelings as they pursue a goal across every touchpoint.</dd></div>
+            <div id="t-ux-writing"><dt>UX writing</dt><dd>Writing the words in an interface (labels, messages, instructions) so people understand what to do.</dd></div>
+            <div id="t-viewport"><dt>Viewport</dt><dd>The part of a web page visible in the browser window at one time. Its size changes with the device and window.</dd></div>
+            <div id="t-wcag"><dt>WCAG</dt><dd>The Web Content Accessibility Guidelines: the international standard for accessible web content, with levels A, AA and AAA.</dd></div>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="empty-page" id="empty" hidden data-ui="empty-state">
+      <svg class="ico" aria-hidden="true"><use href="#i-inbox"/></svg>
+      <p class="ep-title">Empty state</p>
+      <p>No terms match “<span id="empty-q"></span>”. Try another word, such as “menu” or “input”.</p>
+      <button class="btn btn-secondary btn-sm" type="button" id="clear-search">Clear search</button>
+    </div>
+  </main>
+</div>
+
+<footer class="site-footer" data-ui="footer">
+  <span class="rtag">Footer</span>
+  <div class="footer-inner">
+    <div>
+      <div class="an"><a class="logo" href="#top" data-ui="logo"><span class="logo-mark" aria-hidden="true"></span>UI Field Guide</a><span class="cap">Logo</span></div>
+      <p class="footer-blurb">A UI/UX cheat sheet where every element wears its own name.</p>
+    </div>
+    <div class="footer-cols">
+      <nav aria-label="Components">
+        <p class="footer-h">Components</p>
+        <a href="#layout" data-ui="link">Layout &amp; structure</a>
+        <a href="#navigation" data-ui="link">Navigation</a>
+        <a href="#actions" data-ui="link">Buttons &amp; actions</a>
+        <a href="#inputs" data-ui="link">Inputs &amp; forms</a>
+        <a href="#feedback" data-ui="link">Feedback &amp; status</a>
+        <a href="#overlays" data-ui="link">Overlays</a>
+        <a href="#content" data-ui="link">Content &amp; data</a>
+      </nav>
+      <nav aria-label="Language">
+        <p class="footer-h">Language</p>
+        <a href="#type" data-ui="link">Typography</a>
+        <a href="#states" data-ui="link">States</a>
+        <a href="#concepts" data-ui="link">UX concepts</a>
+      </nav>
+      <div>
+        <p class="footer-h">Keyboard shortcuts</p>
+        <div class="footer-keys" data-ui="keyboard-shortcut">
+          <p><kbd>/</kbd> Search</p>
+          <p><kbd>⌘K</kbd> Jump to a term</p>
+          <p><kbd>I</kbd> Inspect mode</p>
+          <p><kbd>Esc</kbd> Close or exit</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-fine"><div class="an"><p>Plain HTML, CSS and JavaScript. No element on this page was left unnamed.</p><span class="cap">Fine print</span></div></div>
+</footer>
+
+<button class="to-top" id="to-top" type="button" hidden data-to-top data-ui="back-to-top-button"><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg>Back to top</button>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<div class="inspect-ov" id="inspect-ov" hidden aria-hidden="true"><span class="iov-name"></span><span class="iov-size"></span></div>
+
+<aside class="inspector inspect-safe" id="inspector" hidden aria-live="polite" aria-label="Inspector panel" data-ui="inspector-panel">
+  <span class="rtag">Inspector panel</span>
+  <div class="insp-head"><p class="insp-kicker" id="insp-kicker">Inspect mode</p><button class="icon-btn icon-btn-sm" type="button" id="insp-close" aria-label="Turn off Inspect mode"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+  <h2 class="insp-name" id="insp-name">Point at anything</h2>
+  <p class="insp-meta" id="insp-meta" hidden></p>
+  <p class="insp-aka" id="insp-aka" hidden></p>
+  <p class="insp-def" id="insp-def">Hover over (or tap) any part of the page to see what it’s called. Click to pin it here. Press Esc to exit.</p>
+  <a class="btn btn-secondary btn-sm insp-jump" id="insp-jump" href="#" hidden>Go to its card <svg class="ico" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+</aside>
+
+<!-- Real overlays -->
+<dialog class="modal-dlg" id="demo-modal" aria-labelledby="modal-title" data-ui="scrim">
+  <span class="rtag rtag-fixed">Scrim</span>
+  <div class="modal" data-ui="modal">
+    <span class="rtag">Modal</span>
+    <div class="modal-head"><h2 id="modal-title">Modal title</h2><button class="icon-btn" type="button" data-close aria-label="Close modal" data-ui="icon-button"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <p>Modal body. Everything behind the scrim is blocked until you close this window with a button, the × icon, the Esc key or a click on the scrim.</p>
+    <div class="modal-actions"><button class="btn btn-secondary" type="button" data-close data-ui="secondary-button">Secondary action</button><button class="btn btn-primary" type="button" data-close data-ui="button">Primary action</button></div>
+  </div>
+</dialog>
+
+<dialog class="drawer-dlg" id="demo-drawer" aria-labelledby="drawer-title" data-ui="scrim">
+  <div class="drawer" data-ui="drawer">
+    <span class="rtag rtag-inline">Drawer</span>
+    <div class="drawer-head"><h2 id="drawer-title">Drawer</h2><button class="icon-btn" type="button" data-close aria-label="Close drawer" data-ui="icon-button"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <p>A panel that slides in from the edge of the screen. Drawers often hold filters, settings or details about a selected item.</p>
+    <div class="field" style="max-width:none"><label class="field-label" for="drawer-sort">Sort by</label><div class="select-wrap" style="max-width:none" data-ui="select"><select class="input" id="drawer-sort"><option>Name</option><option>Category</option></select><svg class="ico" aria-hidden="true"><use href="#i-chevron-down"/></svg></div></div>
+    <label class="switch" data-ui="toggle-switch"><input type="checkbox" role="switch" checked><span class="switch-track" aria-hidden="true"></span>Show captions</label>
+    <button class="btn btn-primary" type="button" data-close data-ui="button" style="margin-top:auto">Done</button>
+  </div>
+</dialog>
+
+<dialog class="drawer-dlg left" id="nav-drawer" aria-labelledby="nav-drawer-title" data-ui="scrim">
+  <div class="drawer" data-ui="drawer">
+    <span class="rtag rtag-inline">Drawer</span>
+    <div class="drawer-head"><h2 id="nav-drawer-title">On this page</h2><button class="icon-btn" type="button" data-close aria-label="Close table of contents" data-ui="icon-button"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <nav class="toc" id="toc-drawer" aria-label="Sections"></nav>
+  </div>
+</dialog>
+
+<dialog class="sheet-dlg" id="demo-sheet" aria-labelledby="sheet-title" data-ui="scrim">
+  <div class="sheet" data-ui="bottom-sheet">
+    <span class="rtag">Bottom sheet</span>
+    <span class="sheet-handle" aria-hidden="true"></span>
+    <span class="cap">Handle</span>
+    <h2 id="sheet-title">Bottom sheet</h2>
+    <p>Slides up from the bottom and keeps the page in view above it. On phones you can often drag the handle to resize it.</p>
+    <button class="btn btn-primary" type="button" data-close data-ui="button">Done</button>
+  </div>
+</dialog>
+
+<dialog class="palette-dlg" id="palette" aria-label="Command palette" data-ui="scrim">
+  <div class="palette" data-ui="command-palette">
+    <span class="rtag">Command palette</span>
+    <div class="palette-search"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg><input id="palette-input" type="text" placeholder="Jump to a term…" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list" aria-label="Jump to a term" autocomplete="off" spellcheck="false"><kbd>Esc</kbd></div>
+    <ul class="palette-list" id="palette-list" role="listbox" aria-label="Terms"></ul>
+    <div class="palette-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>Esc</kbd> close</span></div>
+  </div>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>

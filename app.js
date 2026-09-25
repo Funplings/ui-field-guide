@@ -70,6 +70,35 @@
     el.classList.add('flash');
   }
 
+  /* ---------- Saved terms ---------- */
+  const SAVED_KEY = 'ufg-saved';
+  let saved = new Set();
+  try { saved = new Set(JSON.parse(localStorage.getItem(SAVED_KEY)) || []); } catch {}
+  const storeSaved = () => { try { localStorage.setItem(SAVED_KEY, JSON.stringify([...saved])); } catch {} };
+  const savedCount = $('[data-saved-count]');
+  items.forEach(t => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'icon-btn icon-btn-sm save-btn';
+    b.dataset.ui = 'toggle-button';
+    b.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#i-bookmark"/></svg>';
+    const sync = () => {
+      const on = saved.has(t.slug);
+      b.setAttribute('aria-pressed', String(on));
+      b.setAttribute('aria-label', `${on ? 'Remove' : 'Save'} ${t.name}`);
+      b.title = on ? 'Remove from saved' : 'Save';
+    };
+    sync();
+    b.addEventListener('click', () => {
+      if (saved.has(t.slug)) saved.delete(t.slug); else saved.add(t.slug);
+      storeSaved();
+      sync();
+      toast(saved.has(t.slug) ? `Saved “${t.name}”` : `Removed “${t.name}” from saved`);
+      applyFilter();
+    });
+    ($('.card-body', t.el) || t.el).append(b);
+  });
+
   /* ---------- Search + category filter ---------- */
   const search = $('#search');
   const chips = $$('#chips .chip');
@@ -83,7 +112,7 @@
     const perCat = {};
     let shown = 0;
     items.forEach(t => {
-      const ok = (category === 'all' || t.cat === category) && words.every(w => t.hay.includes(w));
+      const ok = (category === 'all' || t.cat === category || (category === 'saved' && saved.has(t.slug))) && words.every(w => t.hay.includes(w));
       t.el.hidden = !ok;
       if (ok) { shown++; perCat[t.cat] = (perCat[t.cat] || 0) + 1; }
     });
@@ -97,7 +126,11 @@
     $('#results').textContent = shown === items.length
       ? `Showing all ${items.length} terms`
       : `Showing ${shown} of ${items.length} terms`;
+    savedCount.textContent = saved.size;
     $('#empty').hidden = shown > 0;
+    const noSaved = category === 'saved' && !saved.size;
+    $('#empty-saved').hidden = !noSaved;
+    $('#empty-msg').hidden = noSaved;
     $('#empty-q').textContent = query.trim() || category;
   }
 

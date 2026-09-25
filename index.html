@@ -42,6 +42,7 @@
   <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
   <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
   <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3.5 13.5L6 5h12l2.5 8.5V19h-17v-5.5z"/><path d="M3.5 13.5H9a3 3 0 006 0h5.5"/></symbol>
+  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6.5 4h11v16L12 16l-5.5 4V4z"/></symbol>
   <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 17l-5.3 2.8 1.1-5.9-4.4-4.1 6-.8L12 3.5z"/></symbol>
   <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M4 17l5-4.5 4 3.5 3-2.5 4.5 4"/></symbol>
   <symbol id="i-inspect" viewBox="0 0 24 24"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/><path d="M12 9v6M9 12h6"/></symbol>
@@ -148,6 +149,7 @@
       <div class="an">
         <div class="chips" role="group" aria-label="Filter by category" id="chips">
           <button class="chip" type="button" aria-pressed="true" data-filter="all" data-ui="chip">All</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="saved" data-ui="chip"><svg class="ico" aria-hidden="true"><use href="#i-bookmark"/></svg>Saved<span class="chip-n" data-saved-count>0</span></button>
           <button class="chip" type="button" aria-pressed="false" data-filter="layout" data-ui="chip">Layout</button>
           <button class="chip" type="button" aria-pressed="false" data-filter="navigation" data-ui="chip">Navigation</button>
           <button class="chip" type="button" aria-pressed="false" data-filter="actions" data-ui="chip">Actions</button>
@@ -1108,7 +1110,8 @@ For longer, multi-line text. Drag the corner to resize.</textarea></div></div>
     <div class="empty-page" id="empty" hidden data-ui="empty-state">
       <svg class="ico" aria-hidden="true"><use href="#i-inbox"/></svg>
       <p class="ep-title">Empty state</p>
-      <p>No terms match “<span id="empty-q"></span>”. Try another word, such as “menu” or “input”.</p>
+      <p id="empty-msg">No terms match “<span id="empty-q"></span>”. Try another word, such as “menu” or “input”.</p>
+      <p id="empty-saved" hidden>You haven’t saved any terms yet. Press the bookmark on a card to add the ones you keep forgetting.</p>
       <button class="btn btn-secondary btn-sm" type="button" id="clear-search">Clear search</button>
     </div>
   </main>

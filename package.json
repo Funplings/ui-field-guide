@@ -1,0 +1,23 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "A cheat sheet for UI/UX terminology, where every element on the page is labeled with its own name. The header has a tag that says \"Header\", the search box says \"Search bar\", and each of the 150 terms is shown as a working example next to a plain-language definition.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Funplings/ui-field-guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Funplings/ui-field-guide/issues"
+  },
+  "homepage": "https://github.com/Funplings/ui-field-guide#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
